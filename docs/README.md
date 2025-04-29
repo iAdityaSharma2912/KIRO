@@ -1,10 +1,12 @@
-# KIRO - AI-powered Chatbot Application
+---
+
+# **KIRO - AI-powered Chatbot Application**
 
 KIRO (Knowledgeable Innovative Responsive Omnipresent) is an advanced AI-powered personal assistant that simplifies users' lives through smart home automation, real-time information retrieval, communication management, and more. This repository documents the entire process of developing KIRO, its features, technical architecture, and setup instructions.
 
 ---
 
-## Project Overview
+## **Project Overview**
 
 KIRO is designed to provide:
 - **Home Automation**: Control and monitor smart devices (lights, thermostats, etc.)
@@ -19,7 +21,7 @@ It leverages **AI**, **ML**, and **Firebase** to ensure real-time responses and 
 
 ---
 
-## Features
+## **Features**
 - **Voice and Text Input**: Supports both voice and text commands for user interaction.
 - **Natural Language Processing (NLP)**: AI interprets commands, performs actions, and generates responses.
 - **Real-Time Data Synchronization**: Firebase ensures data consistency across all devices.
@@ -29,32 +31,170 @@ It leverages **AI**, **ML**, and **Firebase** to ensure real-time responses and 
 
 ---
 
-## Architecture
+## **Architecture**
 
 KIRO follows a **Client-Server Architecture** with the following components:
 
-### Frontend:
+### **Frontend:**
 - **Mobile App** (Flutter for iOS and Android): Provides a minimalistic and clean UI for interaction.
 - **Web Interface**: Offers control over device management, communication, and security monitoring.
 
-### Backend:
+### **Backend:**
 - **Firebase**: Handles real-time data synchronization, user authentication, and cloud functions.
 - **AI/ML Services**: Cloud-based AI models for natural language processing (NLP) and intelligent response generation.
 - **Third-party Integrations**: APIs for smart home devices, weather updates, and calendar management.
 
-### Security:
+### **Security:**
 - **Data Encryption**: SSL/TLS for data transmission and AES-256 for data storage.
 - **MFA & RBAC**: Ensures secure user authentication and access control.
 
 ---
 
-## Installation & Setup
+## **Installation & Setup**
 
-### Prerequisites
+### **Prerequisites**
 1. **Flutter**: Install Flutter SDK on your machine. Follow the official documentation for setup: [Flutter Installation](https://flutter.dev/docs/get-started/install).
 2. **Firebase**: Set up Firebase for your project. You can follow the steps in the [Firebase Documentation](https://firebase.google.com/docs/flutter/setup) to integrate Firebase with your Flutter app.
 3. **Android Studio or Xcode**: Required for Android and iOS builds.
 
-### Clone the Repository
+### **Clone the Repository**
 ```bash
-git clone https://github.com/<iAdityaSharma>/kiro.git
+git clone https://github.com/<your-username>/kiro.git
+```
+
+### **Install Dependencies**
+Navigate to the project directory and run:
+```bash
+flutter pub get
+```
+
+### **Run the App**
+After setting up the environment, use the following command to run the app:
+```bash
+flutter run
+```
+
+---
+
+## **Usage**
+
+### **Interaction**
+1. **Voice Command**: Use voice commands like "Turn off the lights" or "What's the weather today?".
+2. **Text Command**: Enter text commands through the app’s chat interface.
+
+### **Smart Home Integration**
+- Control lights, thermostats, and security devices.
+- Ensure your IoT devices are connected and compatible with the APIs KIRO uses.
+
+---
+
+## **Flowcharts & Diagrams**
+
+### **1. Command Flow Process**
+
+This flowchart explains how KIRO processes a user command.
+
+```plaintext
++-------------------+
+|  User Input Command|
++-------------------+
+        |
+        v
++----------------------+
+|   Input Processing    |
+|  (Text/Voice Input)   |
++----------------------+
+        |
+        v
++----------------------+
+|    NLP Processing     |
+| (Understanding Input) |
++----------------------+
+        |
+        v
++-----------------------+
+|   Command Execution   |
+|  (Send to Firebase)   |
++-----------------------+
+        |
+        v
++-----------------------+
+|   Response Generation |
++-----------------------+
+        |
+        v
++------------------------+
+|  Response Delivered    |
++------------------------+
+```
+
+### **2. Authentication Process Flow**
+
+This flowchart details the authentication process.
+
+```plaintext
++---------------------------+
+| User Login Request        |
+| (Username/Password Input) |
++---------------------------+
+          |
+          v
++-----------------------------+
+| Credential Verification     |
+|  (Firebase Authentication)  |
++-----------------------------+
+          |
+          v
++--------------------------+
+| Multi-Factor Authentication|
+|   (Send OTP to User)      |
++--------------------------+
+          |
+          v
++--------------------------+
+| OTP Validation            |
+|  (User Enters OTP)        |
++--------------------------+
+          |
+          v
++--------------------------+
+| Access Granted            |
+|  (User Access to System)  |
++--------------------------+
+```
+
+---
+
+## **Contributing**
+
+We welcome contributions! If you’d like to contribute to KIRO, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Create a pull request.
+
+---
+
+## **License**
+
+KIRO is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## **Acknowledgments**
+- **Firebase**: Real-time database and authentication services.
+- **Flutter**: Mobile app development framework.
+- **Google Cloud AI**: For providing NLP and machine learning models.
+
+---
+
+### **Contact**
+
+For any questions or issues, feel free to reach out at:  
+imaddy2912@gmail.com 
+
+
+---
